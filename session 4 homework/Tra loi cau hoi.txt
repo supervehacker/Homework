@@ -1,0 +1,9 @@
+•	What is nested list?
+•	Can a list store both integers and strings in it?
+
+The elements of a list don’t have to be the same type. A list can contains a straing, a flot, an interger, and another list. 
+	Eg: List = [ “alo”, 1.0, 2, [3, 4] ]
+A nested list is a list wihtin another list. ( [3, 4] )
+
+•	Do exercise 1, 2 in this chapter
+
