@@ -22,7 +22,17 @@ s2 = {
     "x": 4,
     "y": 2
     }
-#Initial Position
+o = {
+    "x": 2,
+    "y": 5
+    }
+o2 = {
+    "x": 1,
+    "y": 3
+    }
+
+
+#Initian Position
 cx0 = c['x']
 cy0 = c['y']
 bx0 = b['x']
@@ -45,12 +55,16 @@ def display_map (size, c, b, s):
                 print (" B2", end = "")
             elif x == s2["x"] and y == s2["y"]:
                 print (" S2", end = "")
+            elif x == o["x"] and y == o["y"]:
+                print (" # ", end = "")
+            elif x == o2["x"] and y == o2["y"]:
+                print (" # ", end = "")
             else:
                 print ( " - ", end = "" )
         print ()
     # Hit the wall function
 def wall ( x, y ):
-    if x > size["width"] - 1 or x < 0 or y > size["height"] - 1 or y < 0:
+    if (x > size["width"] - 1 or x < 0 or y > size["height"] - 1 or y < 0) or (x == o['x'] and y == o['y']) or (x == o2['x'] and y == o2['y']):
         c['x'] = cx
         c['y'] = cy
         b['x'] = bx
