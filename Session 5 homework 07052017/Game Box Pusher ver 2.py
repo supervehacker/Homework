@@ -52,9 +52,9 @@ def display_map (size, c, b, s):
             elif x == s["x"] and y == s["y"]:
                 print (" S ", end = "")
             elif x == b2["x"] and y == b2["y"]:
-                print (" B2", end = "")
+                print (" B ", end = "")
             elif x == s2["x"] and y == s2["y"]:
-                print (" S2", end = "")
+                print (" S ", end = "")
             elif x == o["x"] and y == o["y"]:
                 print (" # ", end = "")
             elif x == o2["x"] and y == o2["y"]:
