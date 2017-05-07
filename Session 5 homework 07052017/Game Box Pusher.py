@@ -22,7 +22,7 @@ s2 = {
     "x": 4,
     "y": 2
     }
-#Initian Position
+#Initial Position
 cx0 = c['x']
 cy0 = c['y']
 bx0 = b['x']
