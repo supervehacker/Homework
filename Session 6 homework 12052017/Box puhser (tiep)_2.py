@@ -45,10 +45,7 @@ def position_in_list(points, x, y):
         if point['x'] == x and point['y'] ==y:
             return points.index(point)
     return None
-    # =>> if INTEGER : tuong duong if True, if None, if 0 tuong duong if False
-def vat_can (point, obs):
-    for ob in obs:
-        return point['x'] == ob['x'] and point['y'] == ob['y']                    
+    # =>> if INTEGER : tuong duong if True, if None, if 0 tuong duong if False                
     #Map display
 def display_map (size, c, boxes, s_points):
     for y in range (size["height"]):
@@ -64,12 +61,9 @@ def display_map (size, c, boxes, s_points):
             else:
                 print ( " - ", end = "" )
         print ()
-
 def in_map (size, point):
     return point['x']>= 0 and point['x'] < size['width']\
            and point['y'] >= 0 and point ['y'] < size['height']
-
-    
 def same_point (point1, point2):
     return point1 ['x'] == point2 ['x'] and point1['y'] == point2['y']
 
@@ -83,11 +77,9 @@ def to_string(points):
 def to_set (points):
     return[to_strinng(point) for point in points]
 
-
 print ("Box Pusher the awesome game ver 3")
 print ("Control:\nW = up\nS = down\nA = left\nD = right\nR = Restart current level\n\nLoading level\n.\n.\n.")
 step = 0
-life = 5
 
 loop = True
 while (loop):
@@ -134,7 +126,6 @@ while (loop):
         else:
             # No boxes ahead
             c = c_next
-            
     # Win
     box_string_list = set([to_string(box) for box in boxes])
     s_stringlist = set([to_string(s) for s in s_points])
