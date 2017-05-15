@@ -7,7 +7,6 @@ class Map:
         self.s_point = SKObject(2, 4, " S ")
         self.ob = SKObject(1, 2, " # ")
         self.objects = [self.chaien, self.box, self.s_point, self.ob]
-        self.loop = True
     def print_objects(self,x, y):
         for object in self.objects:
             if object.print(x, y):
